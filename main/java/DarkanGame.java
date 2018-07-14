@@ -21,6 +21,23 @@ public class DarkanGame {
         System.out.println(ironArmour.getName());
         hero.setArmour(ironArmour);
         System.out.println(hero.getArmourStats());
-    }
 
+        Character something = new NPC("Alan")
+                .setWeaponWithCreate(ironHammer)
+                .setArmourWithCreate(ironArmour);
+
+        System.out.println(something.getName());
+        System.out.println(something.getWeaponStats());
+        System.out.println(something.getArmourStats());
+
+        Character goul = new Goblin("Ms Goul")
+                .setWeaponWithCreate(woodSword)
+                .setArmourWithCreate(new IronArmour(5));
+
+        System.out.println(goul.getName());
+        System.out.println(goul.getWeaponName());
+        System.out.println(goul.getArmourName());
+
+        ((Hero) hero).fight(goul);
+    }
 }
