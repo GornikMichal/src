@@ -8,7 +8,4 @@ public class Hammer extends Weapon{
         super(name, dmg);
     }
 
-    public void enchant(int bonusPoints){
-        points=points+bonusPoints;
-    }
 }

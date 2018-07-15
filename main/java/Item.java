@@ -10,4 +10,8 @@ public abstract class Item  implements EnchantInterface{
     public int getPoints(){return points;}
 
     public String getName(){return name;}
+
+    public void enchant(int bonusPoints){
+        points=points+bonusPoints;
+    }
 }
