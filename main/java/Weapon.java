@@ -1,4 +1,4 @@
-public abstract class Weapon extends Item implements WeaponInterface, EnchantInterface{
+public abstract class Weapon extends Item{
 
     Weapon(String name, int dmg){
         super(name, dmg);

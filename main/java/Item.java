@@ -1,4 +1,4 @@
-public abstract class Item {
+public abstract class Item  implements EnchantInterface{
     String name;
     int points;
 
@@ -7,11 +7,7 @@ public abstract class Item {
         this.points=points;
     }
 
-    //public void Points(int points){this.points=points;}
-
     public int getPoints(){return points;}
-
-    //public void setName(String name){this.name=name;}
 
     public String getName(){return name;}
 }

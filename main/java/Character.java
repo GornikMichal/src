@@ -1,4 +1,4 @@
-abstract public class Character implements CharacterInterface{
+abstract public class Character{
     String name;
     int healthPoints;
     Weapon weapon=null;
