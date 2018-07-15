@@ -70,4 +70,9 @@ abstract public class Character implements CharacterInterface{
     public void heal(int healPoints){
         healthPoints=healthPoints+healPoints;
     }
+
+
+    public void fight(Character enemy){
+        Fight.fight(this, enemy);
+    }
 }

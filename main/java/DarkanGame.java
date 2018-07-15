@@ -38,6 +38,6 @@ public class DarkanGame {
         System.out.println(goul.getWeaponName());
         System.out.println(goul.getArmourName());
 
-        ((Hero) hero).fight(goul);
+        hero.fight(goul);
     }
 }
