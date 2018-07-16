@@ -1,6 +1,7 @@
 abstract public class Character{
     String name;
     int healthPoints;
+    int maxHealthPoints;
     Weapon weapon=null;
     Armour armour=null;
 
@@ -18,13 +19,9 @@ abstract public class Character{
         return this;
     }
 
-    //public void setName(String name){this.name=name;}
-
     public String getName(){return name;}
 
     public void setWeapon(Weapon weapon){this.weapon=weapon;}
-
-    //public Weapon getWeapon(){return weapon;}
 
     public void enchantWeapon(int bonus){
         weapon.enchant(bonus);
@@ -34,14 +31,11 @@ abstract public class Character{
         return weapon.getName();
     }
 
-
     public int getWeaponStats(){
         return weapon.getPoints();
     }
 
     public void setArmour(Armour armour){this.armour=armour;}
-
-    //public Armour getArmour(){return armour;}
 
     public void enchantArmour(int bonus){
         armour.enchant(bonus);
@@ -69,6 +63,9 @@ abstract public class Character{
 
     public void heal(int healPoints){
         healthPoints=healthPoints+healPoints;
+        if(healthPoints>maxHealthPoints){
+            healthPoints=maxHealthPoints;
+        }
     }
 
 

@@ -18,7 +18,7 @@ public class IronArmourTest {
         //then
         assertNotNull(ironArmour);
         assertEquals(20, ironArmour.getPoints());
-        assertEquals("Iron Aromur", ironArmour.getName());
+        assertEquals("Iron Armour", ironArmour.getName());
     }
 
     @Test

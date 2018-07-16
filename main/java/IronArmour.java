@@ -1,7 +1,7 @@
 public class IronArmour extends Armour{
 
-    public IronArmour(int dmg) {
-        super("Iron Aromur", dmg);
+    public IronArmour(int armourPoints) {
+        super("Iron Armour", armourPoints);
     }
 
     IronArmour(String name, int armourPoints){
