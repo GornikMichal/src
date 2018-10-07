@@ -30,13 +30,4 @@ public class IronArmourTest {
         assertEquals(30, ironArmour2.getPoints());
         assertEquals("Defener", ironArmour2.getName());
     }
-
-    @Test
-    public void armourEnchantSuccessful(){
-        //when
-        ironArmour.enchant(20);
-        //then
-        assertEquals(40, ironArmour.getPoints());
-    }
-
 }

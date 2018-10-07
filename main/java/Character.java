@@ -23,30 +23,38 @@ abstract public class Character{
 
     public void setWeapon(Weapon weapon){this.weapon=weapon;}
 
-    public void enchantWeapon(int bonus){
-        weapon.enchant(bonus);
-    }
-
     public String getWeaponName(){
-        return weapon.getName();
+        if(weapon != null) {
+            return weapon.getName();
+        } else{
+            return "";
+        }
     }
 
     public int getWeaponStats(){
-        return weapon.getPoints();
+        if(weapon != null) {
+            return weapon.getPoints();
+        } else{
+            return -1;
+        }
     }
 
     public void setArmour(Armour armour){this.armour=armour;}
 
-    public void enchantArmour(int bonus){
-        armour.enchant(bonus);
-    }
-
     public int getArmourStats(){
-        return armour.getPoints();
+        if(armour != null) {
+            return armour.getPoints();
+        } else{
+            return -1;
+        }
     }
 
     public String getArmourName(){
-        return armour.getName();
+        if(armour != null) {
+            return armour.getName();
+        } else{
+            return "";
+        }
     }
 
 
@@ -66,10 +74,5 @@ abstract public class Character{
         if(healthPoints>maxHealthPoints){
             healthPoints=maxHealthPoints;
         }
-    }
-
-
-    public void fight(Character enemy){
-        Fight.fight(this, enemy);
     }
 }

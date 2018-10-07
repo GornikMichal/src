@@ -30,12 +30,4 @@ public class SwordTest {
         assertEquals(30, sword2.getPoints());
         assertEquals("Storm", sword2.getName());
     }
-
-    @Test
-    public void swordEnchantSuccessful(){
-        //when
-        sword.enchant(20);
-        //then
-        assertEquals(40, sword.getPoints());
-    }
 }

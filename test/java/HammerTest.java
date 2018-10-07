@@ -30,12 +30,4 @@ public class HammerTest {
         assertEquals(30, hammer2.getPoints());
         assertEquals("Lava", hammer2.getName());
     }
-
-    @Test
-    public void hammerEnchantSuccessful(){
-        //when
-        hammer.enchant(20);
-        //then
-        assertEquals(40, hammer.getPoints());
-    }
 }

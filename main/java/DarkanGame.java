@@ -1,6 +1,6 @@
 public class DarkanGame {
     public static void main(String[] args) {
-        Character hero=new Hero();
+        /*Character hero=new Hero();
         Weapon sword=new Sword("Exkalibur", 50);
         hero.setWeapon(sword);
 
@@ -9,8 +9,6 @@ public class DarkanGame {
         marie.setWeapon(woodSword);
 
         System.out.println(marie.getWeaponStats());
-        System.out.println(hero.getWeaponStats());
-        hero.enchantWeapon(10);
         System.out.println(hero.getWeaponStats());
 
         Weapon ironHammer=new Hammer("Iron Hammer", 40);
@@ -38,6 +36,15 @@ public class DarkanGame {
         System.out.println(goul.getWeaponName());
         System.out.println(goul.getArmourName());
 
-        hero.fight(goul);
+        hero.fight(goul);*/
+
+        Location []locations = new Location[1];
+        locations[0] = new ValleyOfPiece();
+
+        Character hero=new Hero();
+        Weapon sword=new Sword("Exkalibur", 50);
+        hero.setWeapon(sword);
+
+        ((Hero) hero).startAttack(locations);
     }
 }

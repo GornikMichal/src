@@ -16,7 +16,7 @@ public class FightTest {
                 .setWeaponWithCreate(new Sword(20))
                 .setArmourWithCreate(new IronArmour(5));
         //when
-        hero.fight(goul);
+        ((Hero) hero).startAttack(goul);
         //then
         assertNotNull(hero);
         assertNotNull(goul);
@@ -34,7 +34,7 @@ public class FightTest {
                 .setWeaponWithCreate(new Sword(20))
                 .setArmourWithCreate(new IronArmour(5));
         //when
-        hero.fight(goul);
+        ((Hero) hero).startAttack(goul);
         //then
         assertNotNull(hero);
         assertNotNull(goul);

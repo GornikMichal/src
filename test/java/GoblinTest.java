@@ -95,32 +95,6 @@ public class GoblinTest {
     }
 
     @Test
-    public void enchantWeapon(){
-        //given
-        Weapon sword = new Sword(20);
-        //when
-        goblin.setWeapon(sword);
-        goblin.enchantWeapon(10);
-        //then
-        assertNotNull(sword);
-        assertEquals(30, goblin.getWeaponStats());
-        assertEquals("Sword", goblin.getWeaponName());
-    }
-
-    @Test
-    public void enchantArmour(){
-        //given
-        Armour ironArmour = new IronArmour(20);
-        //when
-        goblin.setArmour(ironArmour);
-        goblin.enchantArmour(10);
-        //then
-        assertNotNull(ironArmour);
-        assertEquals(30, goblin.getArmourStats());
-        assertEquals("Iron Armour", goblin.getArmourName());
-    }
-
-    @Test
     public void getGoblinHealthPoints(){
         assertEquals(50, goblin.getHealthPoints());
     }

@@ -95,32 +95,6 @@ public class NPCTest {
     }
 
     @Test
-    public void enchantWeapon(){
-        //given
-        Weapon sword = new Sword(20);
-        //when
-        npc.setWeapon(sword);
-        npc.enchantWeapon(10);
-        //then
-        assertNotNull(sword);
-        assertEquals(30, npc.getWeaponStats());
-        assertEquals("Sword", npc.getWeaponName());
-    }
-
-    @Test
-    public void enchantArmour(){
-        //given
-        Armour ironArmour = new IronArmour(20);
-        //when
-        npc.setArmour(ironArmour);
-        npc.enchantArmour(10);
-        //then
-        assertNotNull(ironArmour);
-        assertEquals(30, npc.getArmourStats());
-        assertEquals("Iron Armour", npc.getArmourName());
-    }
-
-    @Test
     public void getNpcHealthPoints(){
         assertEquals(100, npc.getHealthPoints());
     }
